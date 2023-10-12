@@ -8,8 +8,8 @@
     <meta name="description" content="JavaJam Coffee Bar Case Study" >
     <meta name="author" content="Jordan King" >
     <meta name="keywords" content="Homework, USU, Data Analytics and Information Systems">
-    <link rel="stylesheet" href="javajam.css">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="{{ url_for('static', filename='javajam.css')}}">
+    <link rel="shortcut icon" href="static/favicon.ico">
 </head>
 <body>
   <div id="wrapper">
@@ -23,7 +23,7 @@
       <a href="/music">Music</a> &nbsp;
       <a href="/jobs">Jobs</a>
   </nav>
-  <img src="images/mugs.jpg" alt="Mugs on a shelf" height="299"  width="400" align="right">
+  <img src="static/images/mugs.jpg" alt="Mugs on a shelf" height="299"  width="400" align="right">
     <h2>Coffee at JavaJam</h2>
     <p>
       Indulge in our locally roasted free-trade coffee and enjoy the aroma, the smooth taste, the caffeine!

@@ -1,20 +1,22 @@
 from flask import Flask, render_template
-from datetime import date
 
 app = Flask(__name__)
 
 @app.route("/")
-def hello_world():
+def home():
     return render_template("index.html")
     
 @app.route("/menu")
-def about_me():
+def menu():
     return render_template("menu.html")
     
 @app.route("/music")
-def music page():
-    returm render_template("music.html")
+def music():
+    return render_template("music.html")
     
 @app.route("/jobs")
-def jobs_page():
+def jobs():
     return render_template("jobs.html")
+    
+if __name__ == "__main__":
+    app.run()
