@@ -5,15 +5,16 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    today = todays_date()
-    nugget = "Chicken Nuggets are good"
-    return render_template("index.html", the_date = today, this = nugget)
+    return render_template("index.html")
     
-@app.route("/about")
+@app.route("/menu")
 def about_me():
-    return render_template("about_me.html")
+    return render_template("menu.html")
     
-def todays_date():
-    today = date.today()
-    str_date = today.strftime("%B %d %Y")
-    return "Today's date is " + str_date
+@app.route("/music")
+def music page():
+    returm render_template("music.html")
+    
+@app.route("/jobs")
+def jobs_page():
+    return render_template("jobs.html")
